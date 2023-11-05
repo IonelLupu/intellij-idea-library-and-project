@@ -12,5 +12,5 @@ This is a demo project to describe the issue from this link: https://youtrack.je
 Try to open the definition for `myFunction`. Notice how the cursor jumps to the import statement instead of jumping directly to the .ts file
 
 **Issue 2:**
-Try to remove the import from `project/index.ts` and use the IDE to import it again. Notice the weird import statement: `import { myFunction } from '../library/build'`. It should be just `library`:
+Try to remove the import from `project/index.ts` and use the IDE to import it again. Notice the weird import statement: `import { myFunction } from '../library/build'`. It should be just `import { myFunction } from 'library'`:
 ![img.png](img.png)
