@@ -1,0 +1,17 @@
+{
+	"name": "project",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "tsc",
+		"start": "node ./build/index.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"typescript": "^5.2.2",
+		"library": "1.0.0"
+	}
+}
