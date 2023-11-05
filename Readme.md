@@ -7,5 +7,10 @@ This is a demo project to describe the issue from this link: https://youtrack.je
 5. `$ npm link` in `library/build`
 6. `$ npm link library` in `project`
 7. `$ npm install` in `project`
-8. Try to remove the import from `project/index.ts` and use the IDE to import it again.
-9. Notice the weird import statement: `import { myFunction } from '../library/build'`. It should be just `library`
+. 
+**Issue 1:**
+Try to open the definition for `myFunction`. Notice how the cursor jumps to the import statement instead of jumping directly to the .ts file
+
+**Issue 2:**
+Try to remove the import from `project/index.ts` and use the IDE to import it again. Notice the weird import statement: `import { myFunction } from '../library/build'`. It should be just `library`:
+![img.png](img.png)
